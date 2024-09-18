@@ -282,7 +282,7 @@ const SuccessStories = () => {
         <div className="fixed top-0 left-0 w-full z-50">
         <Navbar />
         </div> 
-    <div className="  mt-16 py-10 px-5 mt-20">
+    <div className="  mt-16 py-10 px-5 mt-16">
       <h2 className="text-5xl font-bold text-center text-slate-600 mb-12">
         Alumni Success Stories
       </h2>

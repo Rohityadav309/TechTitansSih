@@ -48,7 +48,7 @@ const EventPage = () => {
       <div className="fixed top-0 left-0 w-full z-50">
         <Navbar />
       </div>
-      <div className="bg-gradient-to-b from-indigo-100 via-sky-200 to-red-100 py-10 px-4 mt-20">
+      <div className="bg-gradient-to-b from-indigo-100 via-sky-200 to-red-100 py-10 px-4 mt-16">
         {/* Upcoming Events Carousel */}
         <header className="text-center mb-12">
           <h1 className="text-5xl font-extrabold text-slate-700 mb-4">
