@@ -10,6 +10,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
+import {useNavigate} from 'react-router-dom'
 
 function Signup() {
   const [show, setShow] = useState(false);
@@ -22,6 +23,8 @@ function Signup() {
   const [college, setCollege] = useState("");
   const [registrationNo, setRegistrationNo] = useState("");
   const [batchYear, setBatchYear] = useState("");
+
+  const navigate=useNavigate();
 
   const universities = [
     "University A",
@@ -48,7 +51,7 @@ function Signup() {
   };
 
   const submitHandler = () => {
-    // Handle submit logic here
+    navigate('/')
   };
 
   return (
