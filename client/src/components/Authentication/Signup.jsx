@@ -85,7 +85,10 @@ function Signup() {
           <FormLabel>University</FormLabel>
           <Select
             placeholder="Select your University"
-            onChange={(e) => setUniversity(e.target.value)}
+            onChange={(e) => {
+              setUniversity(e.target.value);
+              setCollege(""); // Clear selected college when university changes
+            }}
           >
             {universities.map((univ, index) => (
               <option key={index} value={univ}>
@@ -94,6 +97,7 @@ function Signup() {
             ))}
           </Select>
         </FormControl>
+
         {university && (
           <FormControl id="college" isRequired>
             <FormLabel>College</FormLabel>
@@ -101,14 +105,15 @@ function Signup() {
               placeholder="Select your College"
               onChange={(e) => setCollege(e.target.value)}
             >
-              {collegesByUniversity[university]?.map((college, index) => (
-                <option key={index} value={college}>
-                  {college}
+              {collegesByUniversity[university]?.map((col, index) => (
+                <option key={index} value={col}>
+                  {col}
                 </option>
               ))}
             </Select>
           </FormControl>
         )}
+
         <FormControl id="registrationNo" isRequired>
           <FormLabel>University Registration Number</FormLabel>
           <Input

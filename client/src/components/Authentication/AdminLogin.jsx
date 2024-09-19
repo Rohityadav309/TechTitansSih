@@ -27,7 +27,7 @@ function AdminLogin() {
   };
 
   const submitHandler = () => {
-    // Add your submit logic here
+    navigate('/');
   };
 
   return (
