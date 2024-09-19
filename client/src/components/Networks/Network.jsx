@@ -24,7 +24,7 @@ function Networks() {
       </Box >
 
       {/* Main content with padding to avoid content behind the fixed navbar */}
-      <Box sx={{ pt: 8, p: 3, height: "100vh", overflow: "hidden" }}>
+      <Box sx={{ pt: 8, p: 3, height: "100vh", overflow: "hidden" , background: "linear-gradient(to right, #4ca1af, #c4e0e5)"}}>
         <Grid container spacing={0} sx={{ height: "100%" }}>
           {/* Left Paper Component */}
           <Grid item xs={3} sx={{ height: "100%", overflowY: "auto" }}>

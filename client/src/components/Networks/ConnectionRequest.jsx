@@ -15,20 +15,20 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const people = [
   {
-    name: "Alice",
+    name: "Dia kumari",
     company: "TechCorp",
     address: "New York",
     mutualConnections: 5,
     rating: 4.5,
-    imageUrl: "https://via.placeholder.com/60",
+    imageUrl: "/assets/person/1.jpeg",
   },
   {
-    name: "Bob",
+    name: "Dev kumar",
     company: "FinTech",
     address: "San Francisco",
     mutualConnections: 2,
     rating: 3.8,
-    imageUrl: "https://via.placeholder.com/60",
+    imageUrl: "/assets/person/img11.jpg",
   },
   {
     name: "Charlie",
@@ -36,7 +36,7 @@ const people = [
     address: "Chicago",
     mutualConnections: 0,
     rating: 4.2,
-    imageUrl: "https://via.placeholder.com/60",
+    imageUrl: "/assets/person/img13.jpg",
   },
   {
     name: "David",
@@ -44,71 +44,23 @@ const people = [
     address: "Los Angeles",
     mutualConnections: 3,
     rating: 3.5,
-    imageUrl: "https://via.placeholder.com/60",
+    imageUrl: "/assets/person/img14.jpg",
   },
   {
-    name: "Charlie",
+    name: "Anup Samanta",
     company: "HealthTech",
     address: "Chicago",
     mutualConnections: 0,
     rating: 4.2,
-    imageUrl: "https://via.placeholder.com/60",
+    imageUrl: "/assets/person/img17.jpg",
   },
   {
-    name: "David",
+    name: "Siddhartha",
     company: "EduTech",
     address: "Los Angeles",
     mutualConnections: 3,
     rating: 3.5,
-    imageUrl: "https://via.placeholder.com/60",
-  },
-  {
-    name: "Charlie",
-    company: "HealthTech",
-    address: "Chicago",
-    mutualConnections: 0,
-    rating: 4.2,
-    imageUrl: "https://via.placeholder.com/60",
-  },
-  {
-    name: "David",
-    company: "EduTech",
-    address: "Los Angeles",
-    mutualConnections: 3,
-    rating: 3.5,
-    imageUrl: "https://via.placeholder.com/60",
-  },
-  {
-    name: "Charlie",
-    company: "HealthTech",
-    address: "Chicago",
-    mutualConnections: 0,
-    rating: 4.2,
-    imageUrl: "https://via.placeholder.com/60",
-  },
-  {
-    name: "David",
-    company: "EduTech",
-    address: "Los Angeles",
-    mutualConnections: 3,
-    rating: 3.5,
-    imageUrl: "https://via.placeholder.com/60",
-  },
-  {
-    name: "Charlie",
-    company: "HealthTech",
-    address: "Chicago",
-    mutualConnections: 0,
-    rating: 4.2,
-    imageUrl: "https://via.placeholder.com/60",
-  },
-  {
-    name: "David",
-    company: "EduTech",
-    address: "Los Angeles",
-    mutualConnections: 3,
-    rating: 3.5,
-    imageUrl: "https://via.placeholder.com/60",
+    imageUrl: "/assets/person/img18.jpg",
   },
   // Add more people as needed
 ];
@@ -152,7 +104,7 @@ function ConnectionRequest() {
         p: 2,
         height: "80vh",
         overflowY: "none",
-        bgcolor: "#f5f5f5",
+        background: "linear-gradient(to right, #c2e59c, #64b3f4)",
       }}
     >
       <Typography variant="h5" sx={{ mb: 2 }}>
@@ -202,7 +154,7 @@ function ConnectionRequest() {
               <Avatar
                 src={person.imageUrl}
                 alt={person.name}
-                sx={{ width: 60, height: 60, mb: 1 }}
+                sx={{ width: 70, height: 80, mb: 1 }}
               />
               <Typography variant="h6" sx={{ mb: 1 }}>
                 {person.name}
