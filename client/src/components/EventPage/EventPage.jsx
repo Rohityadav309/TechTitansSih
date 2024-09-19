@@ -21,7 +21,7 @@ const dummyEvents = [
     location: "College Auditorium",
     description:
       "Join us for the annual alumni meetup with guest speakers, networking sessions, and more.",
-    image: "https://via.placeholder.com/800x400",
+    image: "/EventImg/up1.png",          
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const dummyEvents = [
     location: "Main Conference Hall",
     description:
       "A seminar on the latest tech innovations by renowned industry leaders and experts.",
-    image: "https://via.placeholder.com/800x400",
+    image: "/EventImg/up21.png",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const dummyEvents = [
     date: "2024-11-10",
     location: "College Sports Complex",
     description: "A fun-filled day of sports, games, and alumni bonding.",
-    image: "https://via.placeholder.com/800x400",
+    image: "/EventImg/up3.png",
   },
 ];
 
@@ -67,7 +67,7 @@ const EventPage = () => {
             pagination={{ clickable: true }}
             navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
-            className="w-full h-80 md:h-96"
+            className="w-full h-[calc(20rem+4rem)] md:h-[calc(24rem+4rem)]"
           >
             {dummyEvents.map((event) => (
               <SwiperSlide key={event.id}>
@@ -75,7 +75,7 @@ const EventPage = () => {
                   <img
                     src={event.image}
                     alt={event.title}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-80 object-cover"
                   />
                   <div className="p-6">
                     <h3 className="text-2xl font-semibold text-gray-800 mb-2">
@@ -111,21 +111,21 @@ const EventPage = () => {
         date: "September 25, 2024",
         location: "Alumni Hall, University Campus",
         description: "Join us for an evening of networking with fellow alumni. Connect, collaborate, and catch up with old friends.",
-        image: "https://via.placeholder.com/400x300" // Replace with actual event image URL
+        image: "/EventImg/cu1.png" // Replace with actual event image URL
       },
       {
         title: "Career Development Workshop",
         date: "October 10, 2024",
         location: "Career Center, Building B",
         description: "Enhance your career with our development workshop. Learn new skills, get career advice, and network with professionals.",
-        image: "https://via.placeholder.com/400x300" // Replace with actual event image URL
+        image: "/EventImg/cu2.png" // Replace with actual event image URL
       },
       {
         title: "Annual Alumni Gala",
         date: "November 15, 2024",
         location: "Grand Ballroom, City Hotel",
         description: "Celebrate our annual gala with a night of entertainment, awards, and recognition of outstanding alumni achievements.",
-        image: "https://via.placeholder.com/400x300" // Replace with actual event image URL
+        image: "/EventImg/cu3.png" // Replace with actual event image URL
       }
     ].map((event, index) => (
       <div className="bg-gray-100 rounded-lg shadow-md p-4" key={index}>

@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="bg-gradient-to-r from-[#E3F2FD] to-[#E3F2FD] text-[#000] shadow-md w-full h-16  z-10 "> {/* Changed background color to teal */}
       <div className=" px-2 py-3  flex justify-between w-full  h-16">
         <div className="text-base font-semibold ml-7 ">
-          <Link to="/" className="flex items-center space-x-2  hover:text-red-900 hover:font-semibold">
+          <Link to="/home" className="flex items-center space-x-2  hover:text-red-900 hover:font-semibold">
             <FaHome className="text-2xl"/>
             <span className="text-2xl ">Home</span >
           </Link>

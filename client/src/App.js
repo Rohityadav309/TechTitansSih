@@ -11,6 +11,10 @@ import Mentorship from "./components/Mentorship/Mentorship";
 
 import SuccessStories from "./components/SuccessStories/SuccessStory"
 import EventPage from "./components/EventPage/EventPage"
+import Homepage from "./components/Authentication/Homepage";
+import AdminHomepage from "./components/Authentication/AdminHomepage";
+import { ChakraProvider } from '@chakra-ui/react'; // Import ChakraProvider only for specific use
+
 
 import './App.css';
 
@@ -19,18 +23,39 @@ import './App.css';
 function App() {
   return (
     <Router>
-
-
       <Routes>
-        <Route path="/" element={<Home />} />
+
+        {/* Wrap ChakraProvider only for the signup route */}
+        <Route
+          path="/"
+          element={
+            <ChakraProvider>
+              <Homepage />
+            </ChakraProvider>
+          }
+        />
+        <Route
+          path="/adminlogin"
+          element={
+            <ChakraProvider>
+              <AdminHomepage />
+            </ChakraProvider>
+          }
+        />
+
+        {/* Other routes without ChakraProvider */}
+
+
+
+        <Route path="/home" element={<Home />} />
         <Route path="/network" element={<Networks />} />
         <Route path="/friend" element={<Friend />} />
-        <Route path="/job-portal" element={<Jobs/>} />
+        <Route path="/job-portal" element={<Jobs />} />
         <Route path="/success-stories" element={<SuccessStories />} />
         <Route path="/events" element={<EventPage />} />
-        <Route path="/mentorship-program" element={<Mentorship/>} />
-       
-        
+        <Route path="/mentorship-program" element={<Mentorship />} />
+
+
       </Routes>
     </Router>
   );

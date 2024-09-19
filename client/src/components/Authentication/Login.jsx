@@ -24,7 +24,9 @@ function Login() {
   const handleClick = () => {
     setShow(!show);
   };
-  const submitHandler = () => {};
+  const submitHandler = () => {
+    navigate('/home')
+  };
 
   return (
     <VStack spacing="5px" color="black">
