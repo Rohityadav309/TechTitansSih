@@ -51,7 +51,7 @@ function Signup() {
   };
 
   const submitHandler = () => {
-    navigate('/')
+    navigate('/home')
   };
 
   return (
