@@ -25,7 +25,7 @@ function Login() {
     setShow(!show);
   };
   const submitHandler = () => {
-    navigate('/')
+    navigate('/home')
   };
 
   return (

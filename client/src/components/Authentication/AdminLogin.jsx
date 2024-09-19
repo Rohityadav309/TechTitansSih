@@ -19,7 +19,7 @@ function AdminLogin() {
   const navigate = useNavigate();
 
   const Studentlogin = () => {
-    navigate("/signup");
+    navigate("/");
   };
 
   const handleClick = () => {
@@ -27,7 +27,7 @@ function AdminLogin() {
   };
 
   const submitHandler = () => {
-    navigate('/');
+    navigate('/home');
   };
 
   return (

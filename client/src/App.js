@@ -25,37 +25,37 @@ function App() {
     <Router>
       <Routes>
 
-      {/* Wrap ChakraProvider only for the signup route */}
-      <Route
-        path="/signup"
-        element={
-          <ChakraProvider>
-            <Homepage />
-          </ChakraProvider>
-        }
-      />
-      <Route
-        path="/adminlogin"
-        element={
-          <ChakraProvider>
-            <AdminHomepage />
-          </ChakraProvider>
-        }
-      />
+        {/* Wrap ChakraProvider only for the signup route */}
+        <Route
+          path="/"
+          element={
+            <ChakraProvider>
+              <Homepage />
+            </ChakraProvider>
+          }
+        />
+        <Route
+          path="/adminlogin"
+          element={
+            <ChakraProvider>
+              <AdminHomepage />
+            </ChakraProvider>
+          }
+        />
 
-      {/* Other routes without ChakraProvider */}
+        {/* Other routes without ChakraProvider */}
 
 
-      
-        <Route path="/" element={<Home />} />
+
+        <Route path="/home" element={<Home />} />
         <Route path="/network" element={<Networks />} />
         <Route path="/friend" element={<Friend />} />
-        <Route path="/job-portal" element={<Jobs/>} />
+        <Route path="/job-portal" element={<Jobs />} />
         <Route path="/success-stories" element={<SuccessStories />} />
         <Route path="/events" element={<EventPage />} />
-        <Route path="/mentorship-program" element={<Mentorship/>} />
-       
-        
+        <Route path="/mentorship-program" element={<Mentorship />} />
+
+
       </Routes>
     </Router>
   );
