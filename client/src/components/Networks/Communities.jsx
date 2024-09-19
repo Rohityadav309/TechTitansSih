@@ -17,7 +17,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 const communities = [
   {
     name: "Tech Innovators",
-    logoUrl: "/assets/person/1.jpeg", // or an image URL
+    logoUrl: "/assets/tech/tech.jpg", // Replace with a real image URL
     followers: 1200,
     rating: 4.5,
     adminName: "Alice Johnson",
@@ -26,7 +26,7 @@ const communities = [
   },
   {
     name: "Data Science Experts",
-    logoUrl: "", // or an image URL
+    logoUrl: "/assets/tech/data1.jpeg", // Replace with a real image URL
     followers: 890,
     rating: 4.0,
     adminName: "Bob Smith",
@@ -34,35 +34,46 @@ const communities = [
     creationDate: "2023-02-10",
   },
   {
-    name: "Tech Innovators",
-    logoUrl: "/assets/person/1.jpeg", // or an image URL
-    followers: 1200,
+    name: "AI Enthusiasts",
+    logoUrl: "/assets/tech/ai2.jpeg", // Replace with a real image URL
+    followers: 1500,
+    rating: 4.8,
+    adminName: "Charlie Brown",
+    numberOfPersons: 60,
+    creationDate: "2022-12-10",
+  },
+
+  {
+    name: "AI Decoders",
+    logoUrl: "/assets/tech/ai1.jpg", // Replace with a real image URL
+    followers: 1500,
+    rating: 4.8,
+    adminName: "Charlie Brown",
+    numberOfPersons: 60,
+    creationDate: "2022-12-10",
+  },
+  {
+    name: "MlOps Engineers",
+    logoUrl: "/assets/tech/ml1.jpg", // Replace with a real image URL
+    followers: 1150,
     rating: 4.5,
-    adminName: "Alice Johnson",
-    numberOfPersons: 50,
-    creationDate: "2023-01-15",
+    adminName: "Hank Schrader",
+    numberOfPersons: 45,
+    creationDate: "2022-12-25",
   },
   {
-    name: "Data Science Experts",
-    logoUrl: "", // or an image URL
-    followers: 890,
-    rating: 4.0,
-    adminName: "Bob Smith",
-    numberOfPersons: 30,
-    creationDate: "2023-02-10",
-  },
-  {
-    name: "Tech Innovators",
-    logoUrl: "/assets/person/1.jpeg", // or an image URL
-    followers: 1200,
+    name: "DevOps Engineers",
+    logoUrl: "/assets/tech/data3.jpg", // Replace with a real image URL
+    followers: 1150,
     rating: 4.5,
-    adminName: "Alice Johnson",
-    numberOfPersons: 50,
-    creationDate: "2023-01-15",
+    adminName: "Hank Schrader",
+    numberOfPersons: 45,
+    creationDate: "2022-12-25",
   },
   {
-    name: "Data Science Experts",
-    logoUrl: "", // or an image URL
+    name: " Decode Data Science ",
+    logoUrl: "/assets/tech/data1.jpeg", // Replace with a real image URL
+
     followers: 890,
     rating: 4.0,
     adminName: "Bob Smith",
@@ -70,43 +81,37 @@ const communities = [
     creationDate: "2023-02-10",
   },
   {
-    name: "Tech Innovators",
-    logoUrl: "/assets/person/1.jpeg", // or an image URL
-    followers: 1200,
+    name: "AI Enthusiasts",
+    logoUrl: "/assets/tech/ai2.jpeg", // Replace with a real image URL
+
+    followers: 1500,
+    rating: 4.8,
+    adminName: "Charlie Brown",
+    numberOfPersons: 60,
+    creationDate: "2022-12-10",
+  },
+  {
+    name: "DevOps Engineers",
+    logoUrl: "/assets/tech/devops.webp", // Replace with a real image URL
+    
+    followers: 1150,
     rating: 4.5,
-    adminName: "Alice Johnson",
-    numberOfPersons: 50,
-    creationDate: "2023-01-15",
+    adminName: "Hank Schrader",
+    numberOfPersons: 45,
+    creationDate: "2022-12-25",
   },
   {
-    name: "Data Science Experts",
-    logoUrl: "", // or an image URL
+    name: "Data Science ",
+    logoUrl: "/assets/tech/mlops1.jpg", // Replace with a real image URL
+    
     followers: 890,
     rating: 4.0,
     adminName: "Bob Smith",
     numberOfPersons: 30,
     creationDate: "2023-02-10",
   },
-  {
-    name: "Tech Innovators",
-    logoUrl: "/assets/person/1.jpeg", // or an image URL
-    followers: 1200,
-    rating: 4.5,
-    adminName: "Alice Johnson",
-    numberOfPersons: 50,
-    creationDate: "2023-01-15",
-  },
-  {
-    name: "Data Science Experts",
-    logoUrl: "", // or an image URL
-    followers: 890,
-    rating: 4.0,
-    adminName: "Bob Smith",
-    numberOfPersons: 30,
-    creationDate: "2023-02-10",
-  },
-  // Add more sample communities if needed
 ];
+
 
 function getStars(rating) {
   const stars = [];
@@ -149,7 +154,7 @@ function CommunitiesPage() {
         height: "85vh",
         width: "96.5%",
         overflowY: "hidden",
-        bgcolor: "#f5f5f5",
+        background: "linear-gradient(to right, #c2e59c, #64b3f4)",
         position: "relative",
       }}
     >
@@ -204,14 +209,14 @@ function CommunitiesPage() {
                   <Avatar
                     src={community.logoUrl || <GroupIcon />}
                     alt={community.name}
-                    sx={{ width: 80, height: 80, mb: 1, borderRadius: 2 }}
+                    sx={{ width: 80, height: 69, mb: 1, borderRadius: 2 }}
                   />
-                  <Typography variant="h6" sx={{ mb: 0.5 }}>
+                  <Typography variant="h6" sx={{ mb: 0.3 }}>
                     {community.name}
                   </Typography>
                   <Typography
                     variant="body2"
-                    sx={{ color: "text.secondary", mb: 0.5 }}
+                    sx={{ color: "text.secondary", mb: 0.3 }}
                   >
                     {community.followers.toLocaleString()} followers
                   </Typography>

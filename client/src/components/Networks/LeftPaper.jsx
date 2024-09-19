@@ -39,12 +39,12 @@ function LeftPaper({ setActivePage }) {
             pl: 2,
             textAlign: "left",
             position: "relative",
-            backgroundColor: hoveredIndex === index ? "#f0f0f0" : "#fff",
+            backgroundColor: hoveredIndex === index ? "#AAFFA9" : "#fff", // Update hover color
             transition: "all 0.3s ease",
             transform: hoveredIndex === index ? "scale(1.05)" : "scale(1)",
             cursor: "pointer", // Make it clickable
             "&:hover": {
-              backgroundColor: "#f0f0f0",
+              backgroundColor: "#AAFFA9", // Apply hover color here too
             },
             "&:after": {
               content: '""',
@@ -55,7 +55,7 @@ function LeftPaper({ setActivePage }) {
               borderTop: "30px solid transparent",
               borderBottom: "30px solid transparent",
               borderLeft:
-                hoveredIndex === index ? "10px solid #f0f0f0" : "none",
+                hoveredIndex === index ? "10px solid #AAFFA9" : "none", // Update arrow color to match hover
               transition: "all 0.3s ease",
             },
           }}

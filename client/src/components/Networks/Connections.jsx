@@ -18,95 +18,74 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 const communities = [
   {
-    name: "Tech Innovators",
+    name: "Surbhi Shaw",
     logoUrl: "/assets/person/1.jpeg", // or an image URL
     followers: 1200,
     rating: 4.5,
-    adminName: "Alice Johnson",
-    numberOfPersons: 50,
-    creationDate: "2023-01-15",
+   
+   
   },
   {
-    name: "Data Science Experts",
-    logoUrl: "", // or an image URL
+    name: "Rahul Singh",
+    logoUrl: "/assets/person/img11.jpg", // or an image URL
     followers: 890,
     rating: 4.0,
-    adminName: "Bob Smith",
-    numberOfPersons: 30,
-    creationDate: "2023-02-10",
+  
   },
   {
-    name: "Tech Innovators",
-    logoUrl: "/assets/person/1.jpeg", // or an image URL
+    name: "Maloti Mondal",
+    logoUrl: "/assets/person/img12.jpg", // or an image URL
     followers: 1200,
     rating: 4.5,
-    adminName: "Alice Johnson",
-    numberOfPersons: 50,
-    creationDate: "2023-01-15",
+    
   },
   {
-    name: "Data Science Experts",
-    logoUrl: "", // or an image URL
+    name: "Praveen Das",
+    logoUrl: "/assets/person/img13.jpg", // or an image URL
     followers: 890,
     rating: 4.0,
-    adminName: "Bob Smith",
-    numberOfPersons: 30,
-    creationDate: "2023-02-10",
   },
   {
-    name: "Tech Innovators",
-    logoUrl: "/assets/person/1.jpeg", // or an image URL
+    name: "Sayantan Haz",
+    logoUrl: "/assets/person/img14.jpg", // or an image URL
     followers: 1200,
     rating: 4.5,
-    adminName: "Alice Johnson",
-    numberOfPersons: 50,
-    creationDate: "2023-01-15",
+
   },
   {
-    name: "Data Science Experts",
-    logoUrl: "", // or an image URL
+    name: "Ankita Kundu",
+    logoUrl: "/assets/person/img15.jpg", // or an image URL
     followers: 890,
     rating: 4.0,
-    adminName: "Bob Smith",
-    numberOfPersons: 30,
-    creationDate: "2023-02-10",
+    
   },
   {
-    name: "Tech Innovators",
-    logoUrl: "/assets/person/1.jpeg", // or an image URL
+    name: "Saptrishi Saha",
+    logoUrl: "/assets/person/img16.jpg", // or an image URL
+    followers: 1200,
+  },
+  {
+    name: "Anup Samanta",
+    logoUrl: "/assets/person/img17.jpg", // or an image URL
+    followers: 890,
+    rating: 4.0,
+    
+  },
+  {
+    name: "Deva Giri",
+    logoUrl: "/assets/person/img18.jpg", // or an image URL
     followers: 1200,
     rating: 4.5,
-    adminName: "Alice Johnson",
-    numberOfPersons: 50,
-    creationDate: "2023-01-15",
+
   },
   {
-    name: "Data Science Experts",
-    logoUrl: "", // or an image URL
+    name: "Mona khair",
+    logoUrl: "/assets/person/img19.jpg", // or an image URL
     followers: 890,
     rating: 4.0,
-    adminName: "Bob Smith",
-    numberOfPersons: 30,
-    creationDate: "2023-02-10",
-  },
-  {
-    name: "Tech Innovators",
-    logoUrl: "/assets/person/1.jpeg", // or an image URL
-    followers: 1200,
-    rating: 4.5,
-    adminName: "Alice Johnson",
-    numberOfPersons: 50,
-    creationDate: "2023-01-15",
-  },
-  {
-    name: "Data Science Experts",
-    logoUrl: "", // or an image URL
-    followers: 890,
-    rating: 4.0,
-    adminName: "Bob Smith",
-    numberOfPersons: 30,
-    creationDate: "2023-02-10",
-  },
+
+  }
+ 
   // Add more sample communities if needed
 ];
 
@@ -156,7 +135,7 @@ function ConnectionsPage() {
         height: "80vh",
         width: "96.5%",
         overflowY: "hidden",
-        bgcolor: "#f5f5f5",
+        background: "linear-gradient(to right, #c2e59c, #64b3f4)",
         position: "relative",
       }}
     >
@@ -211,7 +190,7 @@ function ConnectionsPage() {
                   <Avatar
                     src={community.logoUrl || <GroupIcon />}
                     alt={community.name}
-                    sx={{ width: 80, height: 80, mb: 1, borderRadius: 2 }}
+                    sx={{ width: 82, height: 92, mb: 1, borderRadius: 2 }}
                   />
                   <Typography variant="h6" sx={{ mb: 0.5 }}>
                     {community.name}
@@ -249,22 +228,12 @@ function ConnectionsPage() {
                     overflow: "none", // Ensure content fits inside
                   }}
                 >
-                  <Typography variant="h6" sx={{ mb: 1 }}>
-                    Admin: {community.adminName}
-                  </Typography>
-                  <Typography variant="body2" sx={{ mb: 1 }}>
-                    {community.numberOfPersons} persons
-                  </Typography>
-                  <Typography variant="body2" sx={{ mb: 1 }}>
-                    Created on:{" "}
-                    {new Date(community.creationDate).toLocaleDateString()}
-                  </Typography>
                   <Button
                     variant="contained"
                     color="primary"
                     onClick={messageHim}
                   >
-                    Message Him
+                    Message
                   </Button>
                 </Box>
               </Box>
@@ -283,7 +252,6 @@ function ConnectionsPage() {
           bottom: -20, // Adjust this value to move pagination further down
           width: "95%",
           p: 2,
-         
         }}
       >
         <IconButton onClick={handlePreviousPage} disabled={currentPage === 0}>

@@ -61,7 +61,7 @@ const CommunityForm = () => {
         height: "85vh",
         margin: "auto",
         padding: "2rem",
-        bgcolor: "#f0f0f0",
+        background: "linear-gradient(to right, #c2e59c, #64b3f4)",
         borderRadius: "10px",
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
       }}
