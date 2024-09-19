@@ -15,8 +15,8 @@ function RightSidebar() {
   };
 
   return (
-    <div className="flex flex-col h-screen w-[20vw] border-l border-gray-300">
-      <div className="flex items-center p-2">
+    <div className="flex flex-col h-screen w-[20vw] border-l border-black border-[2px]">
+      <div className="flex items-center p-2 bg-[#96DEDA]">
         <img
           src="assets/person/1.jpeg"
           alt="pic"
@@ -32,7 +32,7 @@ function RightSidebar() {
           </div>
         ))}
       </div>
-      <div className="flex items-center p-2 border-t border-gray-300">
+      <div className="flex items-center p-2 border-t border-black-300 bg-[#96DEDA]">
         <input
           type="text"
           placeholder="Type a message..."

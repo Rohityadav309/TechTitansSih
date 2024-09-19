@@ -40,7 +40,7 @@ const StyledSearchIcon = styled(SearchIcon)(({ theme }) => ({
 
 function Message() {
   return (
-    <div className="flex-grow overflow-y-auto p-3 bg-white scrollbar-hide">
+    <div className="flex-grow overflow-y-auto p-3 bg-[#96DEDA] scrollbar-hide">
       <Paper className="sticky top-0 z-10 flex items-center w-full h-12 bg-gray-10">
         {" "}
         {/* Changed to light grey */}

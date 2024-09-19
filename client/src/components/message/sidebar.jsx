@@ -35,7 +35,7 @@ function Sidebar() {
 
   return (
     <div className="w-[30vw] bg-gray-100 flex flex-col h-screen">
-      <div className="p-5 bg-white border-b border-gray-300">
+      <div className="p-5 bg-[#96DEDA] border-b border-gray-300">
         <img
           src="/assets/person/1.jpeg"
           alt="Profile"
@@ -68,7 +68,11 @@ function Sidebar() {
             friend.toLowerCase().includes(searchTerm.toLowerCase())
           )
           .map((friend, index) => (
-            <div key={index} className="bg-gray-300 mb-1 p-2" style={{display:"flex",justifyContent:"center"}}>
+            <div
+              key={index}
+              className="bg-gray-300 mb-1 p-2"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
               {friend}
             </div>
           ))}
