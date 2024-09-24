@@ -103,7 +103,7 @@ const EventPage = () => {
 
         
       <div className="bg-white rounded-lg shadow-lg p-6 mx-auto max-w-4xl mb-12">
-  <h2 className="text-5xl font-bold text-gray-800 mb-6 text-center">Current Events</h2>
+  <h2 className="text-5xl font-bold text-gray-800 mb-6 text-center">Ongoing Events</h2>
   <div className="space-y-6">
     {[
       {
