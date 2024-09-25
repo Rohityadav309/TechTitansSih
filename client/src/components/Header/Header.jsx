@@ -164,7 +164,7 @@ function Header() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" sx={{ backgroundColor: "#0F3850" }}>
+      <AppBar position="fixed" sx={{ backgroundColor: "#4297a0" }}>
         <Toolbar>
           <Typography
             variant="h6"

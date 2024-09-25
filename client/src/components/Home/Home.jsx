@@ -11,7 +11,7 @@ import SearchPost from "../../searchpost/SearchPost";
 
 function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: "#e9eaec" }}>
       <Header />
       <div style={{ marginTop: 64 }}>
         <Navbar />
@@ -22,7 +22,6 @@ function Home() {
             <SearchPost />
             <Post />
             <Post1 />
-            
           </div>
           <div style={{ width: "30vw", marginLeft: "1vw" }}>
             <Rightbar />
