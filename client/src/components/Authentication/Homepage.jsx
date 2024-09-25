@@ -51,7 +51,7 @@ const Homepage = () => {
         >
           {/* Typewriter effect container */}
           <Text
-            fontSize="48px" // Larger font size for 'AluminiX'
+            fontSize="70px" // Larger font size for 'AluminiX'
             fontFamily="'Poppins', sans-serif"
             fontWeight="bold"
             display="inline"
@@ -64,12 +64,12 @@ const Homepage = () => {
           </Text>
 
           <Text
-            fontSize="24px" // Smaller font size for the rest of the first sentence
+            fontSize="20px" // Smaller font size for the rest of the first sentence
             fontFamily="'Poppins', sans-serif"
-            fontWeight="light"
+            
             whiteSpace="nowrap"
             overflow="hidden"
-            ml={1}
+            
             animation={`${typing} 4s steps(4, end) 4s, ${erasing} 4s steps(4, end) 10s infinite`}
             animationDelay="4s" // Delay so that 'AluminiX' appears first
           >
@@ -77,9 +77,9 @@ const Homepage = () => {
           </Text>
 
           <Text
-            fontSize="24px" // Smaller font size for the second sentence
+            fontSize="20px" // Smaller font size for the second sentence
             fontFamily="'Poppins', sans-serif"
-            fontWeight="light"
+            
             whiteSpace="nowrap"
             overflow="hidden"
             mt={2} // Margin to create space between sentences
@@ -89,9 +89,9 @@ const Homepage = () => {
             Personalized Mentorships.
           </Text>
           <Text
-            fontSize="24px" // Smaller font size for the second sentence
+            fontSize="20px" // Smaller font size for the second sentence
             fontFamily="'Poppins', sans-serif"
-            fontWeight="light"
+            
             whiteSpace="nowrap"
             overflow="hidden"
             mt={2} // Margin to create space between sentences
@@ -111,7 +111,7 @@ const Homepage = () => {
         />
 
         {/* Right Side with Tabs */}
-        <Box w="55%" mt="2px">
+        <Box w="55%" mt="8px">
           <Tabs variant="soft-rounded" align="center">
             <TabList mb="1em">
               <Tab width="50%">Login</Tab>
