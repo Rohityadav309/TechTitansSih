@@ -24,7 +24,7 @@ const dummyStories = [
     industry: "Mechanical Engineering",
     story:
       "Jane is now working as a lead engineer at Tesla after gaining extensive experience at several startups.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img12.jpg",
     linkedin: "https://linkedin.com/in/janesmith",
     website: "https://janesmith.com",
     rating: 4.5,
@@ -48,7 +48,7 @@ const dummyStories = [
     industry: "Civil Engineering",
     story:
       "Mark played a key role in designing sustainable infrastructure projects at ABC Construction.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img13.jpg",
     linkedin: "https://linkedin.com/in/markspencer",
     website: "https://markspencer.com",
     rating: 4.7,
@@ -60,7 +60,7 @@ const dummyStories = [
     industry: "Cybersecurity",
     story:
       "Sophie is a leading expert at DEF Cybertech, protecting top global organizations from cyber threats.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img15.jpg",
     linkedin: "https://linkedin.com/in/sophiewilliams",
     website: "https://sophiewilliams.com",
     rating: 4.6,
@@ -72,7 +72,7 @@ const dummyStories = [
     industry: "Electrical Engineering",
     story:
       "Michael is an innovator at GHI Electronics, leading cutting-edge research in smart devices.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img16.jpg",
     linkedin: "https://linkedin.com/in/michaelbrown",
     website: "https://michaelbrown.com",
     rating: 4.9,
@@ -84,7 +84,7 @@ const dummyStories = [
     industry: "Artificial Intelligence",
     story:
       "Emma co-founded an AI startup that provides revolutionary solutions for the healthcare industry.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img19.jpg",
     linkedin: "https://linkedin.com/in/emmaclark",
     website: "https://emmaclark.com",
     rating: 4.8,
@@ -96,7 +96,7 @@ const dummyStories = [
     industry: "Robotics",
     story:
       "David has designed advanced robotic systems for space exploration missions at NASA.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img20.jpg",
     linkedin: "https://linkedin.com/in/davidwright",
     website: "https://davidwright.com",
     rating: 4.7,
@@ -120,7 +120,7 @@ const dummyStories = [
     industry: "Cloud Computing",
     story:
       "James leads cloud infrastructure at AWS, shaping the future of cloud technology.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img14.jpg",
     linkedin: "https://linkedin.com/in/jameslee",
     website: "https://jameslee.com",
     rating: 4.9,
@@ -132,7 +132,7 @@ const dummyStories = [
     industry: "Data Science",
     story:
       "Mia has pioneered data-driven solutions for Fortune 500 companies at JKL Analytics.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img15.jpg",
     linkedin: "https://linkedin.com/in/miaroberts",
     website: "https://miaroberts.com",
     rating: 4.8,
@@ -144,7 +144,7 @@ const dummyStories = [
     industry: "Environmental Engineering",
     story:
       "Robert works on sustainable water management systems for developing countries.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img14.jpg",
     linkedin: "https://linkedin.com/in/robertjohnson",
     website: "https://robertjohnson.com",
     rating: 4.6,
@@ -156,7 +156,7 @@ const dummyStories = [
     industry: "Fintech",
     story:
       "Olivia has led the development of cutting-edge payment solutions at MNO Payments.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img15.jpg",
     linkedin: "https://linkedin.com/in/oliviaking",
     website: "https://oliviaking.com",
     rating: 4.7,
@@ -168,7 +168,7 @@ const dummyStories = [
     industry: "Blockchain Technology",
     story:
       "Ethan is a blockchain expert, creating decentralized applications at PQR Blockchain.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img14.jpg",
     linkedin: "https://linkedin.com/in/ethanharris",
     website: "https://ethanharris.com",
     rating: 4.8,
@@ -180,7 +180,7 @@ const dummyStories = [
     industry: "AI Ethics",
     story:
       "Lily advocates for ethical AI practices and has spoken at major tech conferences worldwide.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img19.jpg",
     linkedin: "https://linkedin.com/in/lilymartinez",
     website: "https://lilymartinez.com",
     rating: 4.9,
@@ -192,7 +192,7 @@ const dummyStories = [
     industry: "Internet of Things",
     story:
       "Daniel has developed IoT solutions that optimize smart cities across the globe.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img14.jpg",
     linkedin: "https://linkedin.com/in/danielwilson",
     website: "https://danielwilson.com",
     rating: 4.7,
@@ -216,7 +216,7 @@ const dummyStories = [
     industry: "Renewable Energy",
     story:
       "Henry is leading renewable energy projects that focus on sustainability and efficiency.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img14.jpg",
     linkedin: "https://linkedin.com/in/henryscott",
     website: "https://henryscott.com",
     rating: 4.8,
@@ -228,7 +228,7 @@ const dummyStories = [
     industry: "3D Printing",
     story:
       "Isabella revolutionized the 3D printing industry by developing faster, cost-efficient printers.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img15.jpg",
     linkedin: "https://linkedin.com/in/isabellaclark",
     website: "https://isabellaclark.com",
     rating: 4.6,
@@ -240,7 +240,7 @@ const dummyStories = [
     industry: "Game Development",
     story:
       "Jack founded a successful indie game studio that has won multiple gaming awards.",
-    image: "https://via.placeholder.com/150",
+    image: "/assets/person/img11.jpg",
     linkedin: "https://linkedin.com/in/jackmartinez",
     website: "https://jackmartinez.com",
     rating: 4.9,
