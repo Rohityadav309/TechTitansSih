@@ -17,14 +17,22 @@ function Networks() {
   }, []);
 
   return (
-    <div >
+    <div>
       {/* Fixed Navbar */}
       <Box sx={{ position: "fixed", width: "100%", zIndex: 100 }}>
         <Navbar />
-      </Box >
+      </Box>
 
       {/* Main content with padding to avoid content behind the fixed navbar */}
-      <Box sx={{ pt: 8, p: 3, height: "100vh", overflow: "hidden" , background: "linear-gradient(to right, #4ca1af, #c4e0e5)"}}>
+      <Box
+        sx={{
+          pt: 8,
+          p: 3,
+          height: "100vh",
+          overflow: "hidden",
+          background: "linear-gradient(to right,  #c4e0e5,#e9eaec)",
+        }}
+      >
         <Grid container spacing={0} sx={{ height: "100%" }}>
           {/* Left Paper Component */}
           <Grid item xs={3} sx={{ height: "100%", overflowY: "auto" }}>
@@ -34,15 +42,13 @@ function Networks() {
 
           {/* Right Paper (Scrolls with the main page) */}
           <Grid item xs={9} sx={{ height: "80%", overflowY: "none" }}>
-            
-           <div style={{marginTop:"58px"}}>
+            <div style={{ marginTop: "58px" }}>
               <RightPaper activePage={activePage} /> {/* Pass activePage */}
             </div>
           </Grid>
         </Grid>
       </Box>
-      </div>
-    
+    </div>
   );
 }
 
