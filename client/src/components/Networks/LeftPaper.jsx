@@ -4,6 +4,7 @@ import { Box, Paper, Typography } from "@mui/material";
 function LeftPaper({ setActivePage }) {
   // Receive setActivePage as a prop
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null); // State to store selected item
   const items = [
     "Connections",
     "Communities",
@@ -33,18 +34,24 @@ function LeftPaper({ setActivePage }) {
           key={index}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
-          onClick={() => setActivePage(item)} // Set active page on click
+          onClick={() => {
+            setSelectedIndex(index); // Set the selected item on click
+            setActivePage(item); // Set active page on click
+          }}
           sx={{
             p: 1,
             pl: 2,
             textAlign: "left",
             position: "relative",
-            backgroundColor: hoveredIndex === index ? "#AAFFA9" : "#fff", // Update hover color
+            backgroundColor:
+              selectedIndex === index || hoveredIndex === index
+                ? "#64b3f4" // Highlight both clicked and hovered item
+                : "#fff",
             transition: "all 0.3s ease",
             transform: hoveredIndex === index ? "scale(1.05)" : "scale(1)",
             cursor: "pointer", // Make it clickable
             "&:hover": {
-              backgroundColor: "#AAFFA9", // Apply hover color here too
+              backgroundColor: "#64b3f4", // Apply hover color here too
             },
             "&:after": {
               content: '""',
@@ -55,14 +62,19 @@ function LeftPaper({ setActivePage }) {
               borderTop: "30px solid transparent",
               borderBottom: "30px solid transparent",
               borderLeft:
-                hoveredIndex === index ? "10px solid #AAFFA9" : "none", // Update arrow color to match hover
+                hoveredIndex === index || selectedIndex === index
+                  ? "10px solid #64b3f4" // Update arrow color to match hover/selected
+                  : "none",
               transition: "all 0.3s ease",
             },
           }}
         >
           <Typography
             sx={{
-              fontSize: hoveredIndex === index ? "1.1rem" : "1rem",
+              fontSize:
+                hoveredIndex === index || selectedIndex === index
+                  ? "1.1rem"
+                  : "1rem",
             }}
           >
             {item}

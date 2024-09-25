@@ -27,7 +27,7 @@ function SearchPost() {
       <TextField
         fullWidth
         id="standard-basic"
-        label="write posts..."
+        label="Share Your thoughts..."
         variant="standard"
         style={{ marginRight: 20 }} // Provide margin only right side for spacing
       />
@@ -37,10 +37,13 @@ function SearchPost() {
           variant="contained"
           startIcon={<CloudUploadIcon />}
           style={{
-            marginRight: 10, // Reduce margin
+            marginRight: 10,
+            height:45 ,
+            width:168
+           
           }}
         >
-          Upload Media
+          Upload media
           <VisuallyHiddenInput
             type="file"
             onChange={(event) => console.log(event.target.files)}

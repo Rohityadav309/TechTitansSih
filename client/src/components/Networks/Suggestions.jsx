@@ -105,7 +105,7 @@ function SuggestionPage() {
         p: 2,
         height: "80vh",
         overflowY: "none",
-        background: "linear-gradient(to right, #c2e59c, #64b3f4)",
+        background: "linear-gradient(to right, #64b3f4, #c3e0e5)",
       }}
     >
       <Typography variant="h5" sx={{ mb: 2 }}>

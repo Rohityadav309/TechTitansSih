@@ -154,7 +154,7 @@ function CommunitiesPage() {
         height: "85vh",
         width: "96.5%",
         overflowY: "hidden",
-        background: "linear-gradient(to right, #c2e59c, #64b3f4)",
+        background: "linear-gradient(to right, #64b3f4, #c3e0e5)",
         position: "relative",
       }}
     >
