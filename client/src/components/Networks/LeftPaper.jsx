@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { Box, Paper, Typography } from "@mui/material";
 
 function LeftPaper({ setActivePage }) {
-  // Receive setActivePage as a prop
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [selectedIndex, setSelectedIndex] = useState(null); // State to store selected item
+  const [selectedIndex, setSelectedIndex] = useState(0); // Initially select the "Connections" page
   const items = [
     "Connections",
     "Communities",
@@ -12,6 +11,11 @@ function LeftPaper({ setActivePage }) {
     "Connection Requests",
     "Create Community",
   ];
+
+  // Set the initial active page to "Connections"
+  React.useEffect(() => {
+    setActivePage(items[0]);
+  }, [setActivePage]);
 
   return (
     <Paper
