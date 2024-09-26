@@ -367,7 +367,7 @@ const SuccessStories = () => {
               {story.name}
             </h3>
             <p className="text-gray-500 text-center mb-4 flex justify-center items-center">
-              <FaGraduationCap className="mr-2" /> Class of {story.graduationYear}
+              <FaGraduationCap className="mr-2" /> Batch {story.graduationYear}
             </p>
             <p className="text-gray-500 text-center mb-4 flex justify-center items-center">
               <FaIndustry className="mr-2" /> {story.industry}
